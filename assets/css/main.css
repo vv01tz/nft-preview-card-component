@@ -110,12 +110,14 @@ body{
     border: 2px var(--highlight-text-color) solid;
     border-radius: 50%;
 }
-/* (Frontend mentor rules) */
+/* Modified Frontend mentor rules */
 .attribution { 
+    padding-top: 1em;
+    color:hsl(0, 0%, 100%);
     font-size: 11px; 
     text-align: center;
  }
 
 .attribution a {
-    color: hsl(228, 45%, 44%); 
+    color: hsl(0, 0%, 75%); 
 }
