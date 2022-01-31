@@ -59,10 +59,6 @@ body{
     margin: 0.67em 0;
 }
 
-.card__body{
-    font-size: 1.107rem;
-}
-
 .card__body__text{
     line-height: 1.7;
     margin-bottom: 0.89em;
