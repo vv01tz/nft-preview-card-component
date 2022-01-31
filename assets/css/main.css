@@ -30,10 +30,10 @@ body{
     color: var(--highlight-text-color);
 }
 
-
 /* (Frontend mentor rules) */
 .attribution { 
-    font-size: 11px; text-align: center;
+    font-size: 11px; 
+    text-align: center;
  }
 
 .attribution a {
