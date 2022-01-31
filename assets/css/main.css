@@ -30,6 +30,86 @@ body{
     color: var(--highlight-text-color);
 }
 
+.card{
+    background-color: var(--secondary-bg-color);
+    border-radius: 1rem;
+    color: var(--text-color);
+    max-width: 20.4375rem;
+    padding: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 87.2%;
+}
+
+.card__img-container{
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card__img-container__img{
+    width: 100%;
+    /* gets rid of extra space underneath the image */
+    vertical-align: middle;
+}
+
+.card__body__heading{
+    font-size: 22px;
+    margin: 0.67em 0;
+}
+
+.card__body{
+    font-size: 1.107rem;
+}
+
+.card__body__text{
+    line-height: 1.7;
+    margin-bottom: 0.89em;
+}
+.card__body__purchase-info,
+.card__body__purchase-info__price,
+.card__body__purchase-info__time-left{
+    display: flex;
+    align-items: center;
+}
+
+.card__body__purchase-info{
+    margin-bottom: 16px;
+    justify-content: space-between;
+}
+
+.card__body__purchase-info__price{
+    color: var(--active-state-color);
+    font-weight: 600;
+}
+
+.crypto-icon,
+.clock-icon{
+    margin-right: 0.4em;
+}
+
+.card__footer{
+    border-top: 1px var(--border-color) solid;
+    padding-top: 1em;
+}
+
+.card__footer__author-img,
+.card__footer__author-credit{
+    display: inline;
+    vertical-align: middle;
+}
+
+.card__footer__author-credit{
+    margin-left: 1em;
+}
+
+.card__footer__author-img{
+    width: 33px;
+    height: 33px;
+    border: 2px var(--highlight-text-color) solid;
+    border-radius: 50%;
+}
 /* (Frontend mentor rules) */
 .attribution { 
     font-size: 11px; 
