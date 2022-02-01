@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://github.com/arnovolts/qr-code-component/blob/master/assets/images/nft-preview-card-component.png)
+![](https://github.com/arnovolts/nft-preview-card-component/blob/master/assets/images/nft-preview-card-component.png)
 
 ### Links
 
