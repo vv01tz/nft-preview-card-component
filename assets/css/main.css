@@ -1,6 +1,6 @@
 :root{
     --highlight-text-color: hsl(0, 0%, 100%);
-    --active-state-color: hsl(178, 100%, 50%);
+    --active-state-color: rgb(0, 255, 247);
     --text-color: hsl(215, 51%, 70%);;
     --primary-bg-color: hsl(217, 54%, 11%);
     --secondary-bg-color: hsl(216, 50%, 16%);
@@ -30,6 +30,14 @@ body{
     color: var(--highlight-text-color);
 }
 
+.active-text{
+    cursor: pointer;
+}
+
+.active-text:hover{
+    color: var(--active-state-color);
+}
+
 .card{
     background-color: var(--secondary-bg-color);
     border-radius: 1rem;
@@ -44,8 +52,37 @@ body{
 }
 
 .card__img-container{
+    cursor: pointer;
     border-radius: 8px;
+    position: relative;
     overflow: hidden;
+}
+
+.card__img-container__hover{
+    display: none;
+    z-index: 1;
+}
+
+.card__img-container__hover,
+.card__img-container__hover:before{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.card__img-container__hover:before{
+    content: "";
+    background: var(--active-state-color);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.card__img-container:hover > .card__img-container__hover{
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .card__img-container__img{
@@ -55,6 +92,7 @@ body{
 }
 
 .card__body__heading{
+    cursor: pointer;
     font-size: 1.375rem;
     margin-bottom: 0.6em;
     margin-top: 1em;
